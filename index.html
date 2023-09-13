@@ -1,83 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da pagina</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=inter:wgh@400;700&display=swap" rel="stylesheet">
+    <title>----</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
 
 </head>
 
 <body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container_botao">
+            <label for="menu" class="container_rotulo">
+                <span class="cabecalho_menu_hamburguer container_imagem"></span>
+            </label>
+            <ul class="lista_menu">
+                <li class="lista_menu_titulo">Menu Hamburguer</li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">Texto Menu Hamburguer 1</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">Texto Menu Hamburguer 2</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">Texto Menu Hamburguer 3</a>
+                </li>
 
-    <section class="principal container">
-        <h1 class="container_titulo"> titulo 1 </h1>
-        <img src="img/brasaoccm480.png" class="container_imagem" alt="descrição da minha imagem">
-        <a href="" class="container_botao">Projetos de Robótica</a>
-        <a href="" class="container_botao container_secundario">Projetos de PC</a>
+            </ul>
+            <img src="" alt="Logo da Escola" class="container_imagem">
+            <h1 class="container_titulo">
+                <b class="container_titulo--negrito">Nome da</b> Escola
+            </h1>
+        </div>
+
+        <ul class="opcoes">
+            <input class="checkbox" id="opcoes-menu" class="opcoes_botao">
+            <label for="opcoes_botao" class="opcoes_rotulo">
+                <li class="opcoes_item"> Link 1</li>
+            </label>
+
+            <lu class="lista-menu">
+                <li class="lista-menu_item">
+                    <a href="#" class="lista-menu_link">Link 1.2</a>
+                </li>
+                <li class="lista-menu_item">
+                    <a href="#" class="lista-menu_link">Link 1.3</a>
+                </li>
+                <li class="lista-menu_item">
+                    <a href="#" class="lista-menu_link">Link 1.4</a>
+                </li>
+            </lu>
+            <li class="opcoes_item">
+                <a href="#" class="opcoes_link">Link 2</a>
+            </li>
+            <li class="opcoes_item">
+                <a href="#" class="opcoes_link">Link 3</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <section class="banner">
+        <h2 class="banner_titulo">Vamos iniciar nossa visita aos projetos?</h2>
+        <p class="banner_texto">Projetos de Robótica e de Pensamento Computacional</p>
     </section>
-    <!--inicio bloco referente ao link da Robótica-->
-    <section class="container secundario">
-        <img src="img/robotica.png" alt="projetos de robotica">
-        <div class="container-descricao">
-            <h2 class="descricao-titulo">Robótica</h2>
-            <p class="descricao-texto">Aqui vai a descrição de Robotica</p>
-            <a href="#" class="container_botao section-botao" contrainer>Veja os Projetos</a>
+
+    <section class="projetos">
+        <h2 class="projetos_titulo">PROJETOS</h2>
+        <div class="projetos_container">
+
+            <div class="card">
+
+                <div class="card_descricao">
+                    <!--1ª coluna-->
+                    <div class="descricao">
+                        <h3 class="descricao_titulo">Projeto de Robótica</h3>
+                        <h2 class="descricao_titulo-livro">Turma</h2>
+                        <p class="descricao_texto">Descrição do Projeto</p>
+                    </div>
+                    <!--2ª coluna-->
+                    <img src="img/" class="descricao_imagem">
+                </div>
+
+                <div class="card_botoes">
+                    <ul class="botoes"></ul>
+                    <a href="#" class="botoes_ancora">Saiba mais</a>
+                </div>
+
+            </div>
+
         </div>
     </section>
-    <!--fim do bloco referente ao link de Robótica-->
-
-    <!--inicio bloco referente ao link da pensamento computacional-->
-    <section class="container secundario">
-        <img src="img/pc.png" alt="projetos de pensamento computacional">
-        <div class="container-descricao">
-            <h2 class="descricao-titulo">Pensamento Computacional</h2>
-            <p class="descricao-texto">Aqui vai a descrição de pensamento computacional</p>
-            <a href="#" class="container_botao section-botao" contrainer>Veja os Projetos</a>
-                </div>
-    </section>
-    <!--fim do bloco referente ao link de pensamento computacional-->
-
-    <section class="estatisticas">
-        <h2 class="estatisticas-titulo">Estatisticas</h2>
-        <ul class="estatisticas-lista">
-            <li>
-                <img src="img/Logo.png" alt="Projetos de Robótica">
-                <h3 class="lista-item">2 projetos</h3>
-            </li>
-
-            <li>
-                <img src="img/Logo.png" alt="Projetos de Robótica">
-                <h3 class="lista-item">3 projetos</h3>
-            </li>
-        </ul>
-    </section>
-
-
-    <footer class="rodape">
-        <img src="img/Logo.png" alt="Imagem do logo da escola" class="rodape-logo">
-        <ul class="rodape-lista">
-            <li class="lista-link">
-                <a href="#">Texto 1</a>
-            </li>
-            <li class="lista-link">
-                <a href="#">Texto 2</a>
-            </li>
-            <li class="lista-link">
-                <a href="#">Texto 3</a>
-            </li>
-        </ul>
-        <p class="rodape-texto">Todos os direitos reservados</p>
-        <p class="rodape-texto">Veja os projetos de Robótica e Pensamento Computacional desenvolvidos pelos alunos do
-            Colégio Militar Julio Farah no ano de 2023</p>
-    </footer>
 
 </body>
+
+<footer class="rodape">
+    <h2 class="rodape_titulo">C.E.C.M JULIO FARAH / 2023</h2>
+</footer>
+
 
 </html>
